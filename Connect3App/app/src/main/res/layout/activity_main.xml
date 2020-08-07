@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/board" />
+
+    <ImageView
+        android:id="@+id/Casilla_2"
+        android:layout_width="0dp"
+        android:layout_height="130sp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="play"
+        app:layout_constraintBottom_toTopOf="@+id/Casilla_5"
+        app:layout_constraintEnd_toStartOf="@+id/Casilla_3"
+        app:layout_constraintStart_toEndOf="@+id/Casilla_1"
+        app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+    <ImageView
+        android:id="@+id/Casilla_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:onClick="play"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Casilla_2"
+        app:layout_constraintEnd_toStartOf="@+id/Casilla_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Casilla_2"
+        app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+    <ImageView
+        android:id="@+id/Casilla_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="play"
+        app:layout_constraintBottom_toBottomOf="@+id/Casilla_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Casilla_2"
+        app:layout_constraintTop_toTopOf="@+id/Casilla_2"
+        app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+    <ImageView
+        android:id="@+id/Casilla_4"
+        android:layout_width="0dp"
+        android:layout_height="130sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:onClick="play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Casilla_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+    <ImageView
+        android:id="@+id/Casilla_5"
+        android:layout_width="0dp"
+        android:layout_height="130sp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:onClick="play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Casilla_6"
+        app:layout_constraintStart_toEndOf="@+id/Casilla_4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+    <ImageView
+        android:id="@+id/Casilla_6"
+        android:layout_width="0dp"
+        android:layout_height="130sp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Casilla_5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+    <ImageView
+        android:id="@+id/Casilla_7"
+        android:layout_width="0dp"
+        android:layout_height="130sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:onClick="play"
+        app:layout_constraintBottom_toBottomOf="@+id/Casilla_8"
+        app:layout_constraintEnd_toStartOf="@+id/Casilla_8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Casilla_8"
+        app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+    <ImageView
+        android:id="@+id/Casilla_9"
+        android:layout_width="0dp"
+        android:layout_height="130sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="play"
+        app:layout_constraintBottom_toBottomOf="@+id/Casilla_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Casilla_8"
+        app:layout_constraintTop_toTopOf="@+id/Casilla_8"
+        app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+    <ImageView
+        android:id="@+id/Casilla_8"
+        android:layout_width="0dp"
+        android:layout_height="130sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="39dp"
+        android:onClick="play"
+        app:layout_constraintBottom_toTopOf="@+id/winner"
+        app:layout_constraintEnd_toStartOf="@+id/Casilla_9"
+        app:layout_constraintStart_toEndOf="@+id/Casilla_7"
+        app:layout_constraintTop_toBottomOf="@+id/Casilla_5"
+        app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:alpha="0"
+        android:text="Winner:"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/winnerText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/winnerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0"
+        android:text="Winner!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/overButton"
+        app:layout_constraintStart_toEndOf="@+id/winner" />
+
+    <Button
+        android:id="@+id/overButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="72dp"
+        android:alpha="0"
+        android:onClick="reset"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/winnerText"
+        app:layout_constraintTop_toBottomOf="@+id/Casilla_9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
