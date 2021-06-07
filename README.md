@@ -1,2 +1,2 @@
 # Android-Apps
-This is where i post my android apps
+Simple Android App to Play the famous game Connect3(Tic Tac Toe)
